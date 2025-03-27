@@ -7,15 +7,19 @@ version: "3.8"
 
 services:
   neo4j:
-    container_name: neo4j-boot
+    container_name: neo4j
     image: neo4j:5.22.0
     ports:
       - 7474:7474	# for browser console
       - 7687:7687	# for db
     volumes:
-      - /mypath/data:/data		## volume mount
+      - ./neo4j/data:/data		## volume mount
+      - ./neo4j/import:/import
+    user: '1000'
+    group_add:
+    - '1000'
     environment:
-      - NEO4J_AUTH=neo4j/password
+      - NEO4J_AUTH=none
       - NEO4J_ACCEPT_LICENSE_AGREEMENT=yes
       - NEO4JLABS_PLUGINS=["graph-data-science", "apoc"]
       - NEO4J_dbms_security_procedures_whitelist=gds.*, apoc.*
