@@ -44,3 +44,7 @@ Neo4j 라이브러리를 사용해서 KG 를 조회한다.
 ### Machine Learning
 #### 1. [neo4j_node_embedding.ipynb](neo4j_node_embedding.ipynb)
 FastRP 알고리즘을 사용해서 node embedding 을 생성 후 조회한다.
+
+### Examples
+#### 1. [migrate_content_and_recommend_tag.ipynb](migrate_content_and_recommend_tag.ipynb)
+컨텐츠와 추천 태그 간 relation 을 생성하여 조회, 추천 구현한 예제
