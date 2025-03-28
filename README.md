@@ -41,6 +41,9 @@ Neo4j LLM Knowledge Graph Builder 를 사용해서 KG 를 빌드한다.
 #### 1. [neo4j_kg_retriever.ipynb](neo4j_kg_retriever.ipynb)[neo4j_kg_retriever.ipynb](neo4j_kg_retriever.ipynb)
 Neo4j 라이브러리를 사용해서 KG 를 조회한다.
 
+#### 2. [neo4j_kg_retriever.ipynb](neo4j_kg_retriever.ipynb)[neo4j_kg_retriever.ipynb](neo4j_kg_retriever.ipynb)[langchain_kg_retriever.ipynb](langchain_kg_retriever.ipynb)
+langchain 라이브러리를 사용해서 KG 를 조회한다.
+
 ### Machine Learning
 #### 1. [neo4j_node_embedding.ipynb](neo4j_node_embedding.ipynb)
 FastRP 알고리즘을 사용해서 node embedding 을 생성 후 조회한다.
